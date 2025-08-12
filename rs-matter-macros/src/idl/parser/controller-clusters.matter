@@ -5482,9 +5482,12 @@ cluster WindowCovering = 258 {
   }
 
   bitmap OperationalStatus : bitmap8 {
-    kGlobal = 0x3;
-    kLift = 0xC;
-    kTilt = 0x30;
+    kGlobalOpening = 0x1;
+    kGlobalClosing = 0x2;
+    kLiftOpening = 0x4;
+    kLiftClosing = 0x8;
+    kTiltOpening = 0x10;
+    kTiltClosing = 0x10;
   }
 
   bitmap SafetyStatus : bitmap16 {
